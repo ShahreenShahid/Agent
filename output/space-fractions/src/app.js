@@ -1,8 +1,10 @@
 const express = require('express');
+const path = require('path');
 
 const app = express();
 
 app.use(express.json());
+app.use(express.static(path.join(__dirname, '../public')));
 
 // Health check endpoint
 app.get('/health', (req, res) => {
@@ -17,3 +19,10 @@ app.get('/play', (req, res) => {
 });
 
 module.exports = app;
+
+if (require.main === module) {
+  const PORT = process.env.PORT || 3000;
+  app.listen(PORT, () => {
+    console.log(`Space Fractions Game server running at http://localhost:${PORT}`);
+  });
+}
