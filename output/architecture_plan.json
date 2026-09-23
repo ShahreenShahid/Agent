@@ -1,0 +1,53 @@
+{
+  "project_name": "space-fractions",
+  "files": [
+    {
+      "path": "package.json",
+      "description": "Node.js package metadata, scripts, and runtime dependencies."
+    },
+    {
+      "path": "src/app.js",
+      "description": "Express application entry point with health and game API routes."
+    },
+    {
+      "path": "src/components/game.js",
+      "description": "Game component containing game state and scoring logic."
+    },
+    {
+      "path": "src/components/question.js",
+      "description": "Question component for retrieving and checking questions."
+    },
+    {
+      "path": "src/components/user.js",
+      "description": "User component for identity, authorization, and score access."
+    },
+    {
+      "path": "sql/game_ddl.sql",
+      "description": "PostgreSQL DDL for games and durable game state."
+    },
+    {
+      "path": "sql/question_ddl.sql",
+      "description": "PostgreSQL DDL for questions and answer data."
+    },
+    {
+      "path": "proto/internal.proto",
+      "description": "Internal GameService protobuf contract."
+    },
+    {
+      "path": "openapi.yaml",
+      "description": "OpenAPI contract for the public Space Fractions API."
+    },
+    {
+      "path": "k8s/spacefractions-deployment.yaml",
+      "description": "Kubernetes deployment manifest for the service."
+    },
+    {
+      "path": "test/app.test.js",
+      "description": "Unit and API tests for the generated application."
+    },
+    {
+      "path": "README.md",
+      "description": "Setup, architecture, API, testing, and deployment documentation."
+    }
+  ]
+}
